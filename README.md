@@ -32,7 +32,13 @@ pip install -r requirements.txt
 The model was built using tensorflow on Google Colab which provides free K80 GPU support for training the model. 
 * All the network models have been split and made into different class objects.
 * Checkpoints are saved at every 5 epochs and the last epoch weights were saved and extracted along with train captions data to be loaded while inferring.
+* An Adam Optimizer has been used.
+* Sparse categorical crossentropy loss object has been used with custom loss-function.
 All the training details and code can be found in this jupyter notebook :- [Caption It Training](https://github.com/ajayKumar99/Caption-It/blob/master/training/I_Caption.ipynb) 
+
+### Post Training
+* After training the model, the saved checkpoints folder should be placed inside the Model folder.
+* Also, the training captions saved, training_captions.npy, should be kept inside the checkpoint folder inside Model.
 
 ## APIs Used
 * [Material Design Lite](https://getmdl.io/started/index.html#download) - A light weight material design ui for static html pages. 
