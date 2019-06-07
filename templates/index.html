@@ -1,0 +1,20 @@
+{% extends "layout.html" %} {% block main %}
+<div class="page-content">
+    <br><br><br>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col"></div>
+        <div class="mdl-cell mdl-cell--8-col">
+            <form method="POST" action="{{ url_for('.caption') }}" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*" id="input-b2" class="file" data-show-preview="false">
+                <br>
+                <br>
+
+                <center><input type="submit" value="Caption it!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"></center>
+            </form>
+            <br>
+
+        </div>
+        <div class="mdl-cell mdl-cell--2-col"></div>
+    </div>
+</div>
+{% endblock %}
