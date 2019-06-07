@@ -34,7 +34,7 @@ The model was built using tensorflow on Google Colab which provides free K80 GPU
 * Checkpoints are saved at every 5 epochs and the last epoch weights were saved and extracted along with train captions data to be loaded while inferring.
 * An Adam Optimizer has been used.
 * Sparse categorical crossentropy loss object has been used with custom loss-function.
-All the training details and code can be found in this jupyter notebook :- [Caption It Training](https://github.com/ajayKumar99/Caption-It/blob/master/training/I_Caption.ipynb) 
+* All the training details and code can be found in this jupyter notebook :- [Caption It Training](https://github.com/ajayKumar99/Caption-It/blob/master/training/I_Caption.ipynb) 
 
 ### Post Training
 * After training the model, the saved checkpoints folder should be placed inside the Model folder.
